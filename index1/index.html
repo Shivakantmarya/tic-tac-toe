@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="msg-container hide">
+        <p id="msg">winner</p>
+        <img src="winner.gif" alt="" style="border-radius: 4rem;">
+        <button id="new-btn">New Game</button>
+        <button id="new-btn2">New Game</button>
+    </div>
+    <main>
+        
+        <h4 id="text"></h4>
+        <h4 id="text2">Playing With <span>Jason</span></h4>
+        <input type="text" placeholder="playerX Name" id="pName">
+        <input type="text" placeholder="playerY Name" id="sName">
+        
+        <div id="home-page">
+            <h1 id="home-h1">Tic-Tac-Toe</h1>
+            
+            <h3 onclick="multiplayer()" id="multiplay">Multiplayer  <i class="fa-solid fa-user-group"></i></h3>
+
+            <h3 id="computer">Play With Jason  <i class="fa-solid fa-user-secret"></i></h3>
+        </div>
+        
+        <div class="turn">
+             <button id="turnMe" onclick="turnMe()">Jason - MODE</button>
+        </div>
+
+        <div class="select-level">
+            <!-- <h1>Play With Jason</h1> -->
+            <!-- <h3 onclick="easyPlayer()" id="easyPlayer">Easy</h3> -->
+            <!-- <h3 onclick="basicPlayer()" id="basicPlayer">Basic</h3> -->
+            <!-- <h3 onclick="mediumPlayer()" id="mediumPlayer">Medium</h3> -->
+            <h3 onclick="hardPlayer()" id="hardPlayer">Hard</h3>
+            <!-- <button id="back-home2">Back Home  <i class="fa-solid fa-house"></i></button> -->
+            <!-- <button id="back-home">Back Home <i class="fa-solid fa-house"></i></button> -->
+
+        </div>
+        
+        <div class="container">
+            <div class="game">
+                <div class="draw">
+                    <h1 id="dra">Match Draw!</h1>
+                    <p id="play-again"><i class="fa-solid fa-arrow-down-long"></i> Reset Game</p>
+
+                </div>
+               
+
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+        </div>
+
+        <button id="reset-btn">Reset Game</button>
+        <button id="reset-btn2">Reset Game</button>
+        <button id="back-home">Back Home <i class="fa-solid fa-house"></i></button>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

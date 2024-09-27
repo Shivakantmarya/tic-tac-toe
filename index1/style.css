@@ -1,0 +1,1073 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+body {
+  background-color: darkcyan;
+  text-align: center;
+  color: blue;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home-page {
+  width: 30rem;
+  height: 17rem;
+  padding: 4rem;
+  margin-top: 7rem;
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  border-left: 2px solid red;
+  border-bottom: 2px solid red;
+  background: transparent;
+  box-shadow: 3px 10px 52px black;
+  line-height: 2;
+}
+
+#home-h1 {
+  color: black;
+  text-decoration: underline;
+  text-shadow: 1px 2px 4px beige;
+  font-family: cursive;
+}
+
+#multiplay,
+#computer {
+  cursor: pointer;
+  color: bisque;
+}
+
+#multiplay:hover,
+#computer:hover {
+  color: #d7c3ab;
+}
+
+#multiplay:active,
+#computer:active {
+  color: red;
+}
+
+.fa-solid {
+  color: black;
+  font-size: 23px;
+}
+
+.fa-house {
+  color: white;
+}
+
+.select-level {
+  margin-top: 3vh;
+  font-size: 1.2rem;
+  font-family: cursive;
+  height: 45vh;
+  width: 51vw;
+  padding: 1rem;
+  border-radius: 20px;
+  border-left: 2px solid beige;
+  border-bottom: 2px solid beige;
+  box-shadow: 1px 2px 4px black;
+  line-height: 2.5;
+}
+
+#easyPlayer {
+  font-family: cursive;
+  text-decoration: underline;
+  color: cornsilk;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+#basicPlayer {
+  font-family: cursive;
+  text-decoration: underline;
+  color: cornsilk;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+#mediumPlayer {
+  font-family: cursive;
+  text-decoration: underline;
+  color: cornsilk;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+#hardPlayer {
+  font-family: cursive;
+  text-decoration: underline;
+  color: cornsilk;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+#easyPlayer:hover, #basicPlayer:hover,
+#mediumPlayer:hover, #hardPlayer:hover{
+  color: #d7c3ab;
+}
+
+#easyPlayer:active, #basicPlayer:active,
+#mediumPlayer:active, #hardPlayer:active{
+  color: red;
+}
+
+#text {
+  position: relative;
+  color: #f4efef;
+  font-size: 20px;
+  font-family: cursive;
+  height: 4rem;
+  width: 22rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  border-left: 2px solid red;
+  border-bottom: 2px solid red;
+  box-shadow: 5px 5px 5px black;
+  background: transparent;
+}
+
+#text2 {
+  font-size: 30px;
+  margin-top: 14px;
+  margin-bottom: 21px;
+  text-decoration: underline;
+  color: darkred;
+}
+
+#text2 span {
+  font-family: cursive;
+  color: orangered;
+  font-size: 35px;
+  text-shadow: 1px 2px 4px black;
+}
+
+input#pName,
+input#sName {
+  height: 1.5rem;
+  width: 8rem;
+  padding: 6px;
+  margin-top: 0.6rem;
+  border: none;
+  outline: none;
+  border: 2px solid blue;
+  border-radius: 7px;
+}
+
+#h1 {
+  text-decoration: underline;
+  font-family: system-ui;
+}
+
+.container {
+  height: 65vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+  position: relative;
+}
+
+.draw {
+  position: absolute;
+  background: cadetblue;
+  height: 12rem;
+  width: 24rem;
+  border-radius: 12px;
+}
+
+h1#dra {
+  position: absolute;
+  left: 5.4rem;
+  top: 2.5rem;
+}
+
+p#play-again {
+  margin-top: 6rem;
+  margin-left: -3rem;
+  font-size: 20px;
+  font-weight: 500;
+  color: crimson;
+  text-decoration: underline;
+}
+
+.fa-arrow-down-long {
+  font-size: 30px;
+  color: black;
+}
+
+.line {
+  height: 0.3rem;
+  width: 22rem;
+  background-color: red;
+  position: absolute;
+  rotate: 90deg;
+  display: none;
+}
+
+.box {
+  height: 16vh;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  font-size: 8vmin;
+  color: blue;
+  border-left: solid black 1px;
+  border-bottom: 2px solid black;
+  background: transparent;
+  box-shadow: 9px 10px 12px black;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: #b0413e;
+}
+
+.box:active {
+  background-color: #ca615e;
+  scale: 0.95;
+}
+
+#reset-btn,
+#reset-btn2,
+#back-home,
+#new-btn,
+#new-btn2 {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: blue;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 600;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+/* #back-home2{
+  margin-top: 4vh;
+  padding: 0.4rem;
+  font-size: 1rem;
+  background-color: blue;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 600;
+  transition: all ease 0.2s;
+  cursor: pointer;
+} */
+
+#reset-btn:active,
+#reset-btn2:active,
+#back-home:active,
+#back-home2:active,
+#new-btn:active,
+#new-btn2:active {
+  background-color: #8f8934;
+  scale: 0.9;
+}
+
+#reset-btn:hover,
+#reset-btn2:hover,
+#back-home:hover,
+#back-home2:hover,
+#new-btn:hover,
+#new-btn2:hover {
+  background-color: #da9b0a;
+  color: black;
+}
+
+#msg {
+  color: #fffc7f;
+  font-size: 8vmin;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+
+// jason turn 
+
+.turn{
+  position:relative;
+}
+
+#turnMe{
+  position: absolute;
+    height: 32px;
+    width: 12rem;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: cursive;
+    top: 61px;
+    background: transparent;
+    color: floralwhite;
+    left: 34rem;
+}
+
+#turnMe:hover{
+  background-color: darkslategrey;
+  color:#e8bb10;
+  font-size:20px;
+}
+#turnMe:active {
+  background-color: #8f8934;
+  scale: 0.9;
+}
+
+
+.hide {
+  display: none;
+}
+
+/* Media Queries for Devices 300px to 399px */
+@media (min-width: 300px) and (max-width: 399px) {
+  #home-page {
+    height: 15rem;
+    width: 14rem;
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+
+  .container {
+    height: 18vh;
+  }
+
+  #text {
+    color: #f5ec12;
+    font-size: 12px;
+    height: 3.5rem;
+    width: 14rem;
+  }
+
+  .game {
+    height: 45vmin;
+    margin-bottom: 2.5rem;
+    gap: 2vmin;
+    margin-left: 10px;
+  }
+
+  .box {
+    height: 12vh;
+    width: 14vmin;
+  }
+
+  #reset-btn {
+    font-size: 1rem;
+    margin-top: 8rem;
+  }
+
+  #reset-btn2 {
+    font-size: 1rem;
+    margin-top: 8rem;
+  }
+
+  #back-home {
+    font-size: 1rem;
+    margin-top: 8rem;
+  }
+
+  .msg-container {
+    position: relative;
+  }
+
+  #new-btn {
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    position: absolute;
+    top: 15rem;
+  }
+
+  img {
+    height: 35vmin;
+    width: 55vmin;
+    position: absolute;
+    bottom: 1rem;
+  }
+
+  #msg {
+    font-weight: 700;
+    padding: 10px;
+    position: absolute;
+    top: 2rem;
+  }
+
+  .draw {
+    height: 7rem;
+    width: 14rem;
+    margin-top: 3rem;
+  }
+
+  h1#dra {
+    left: 2rem;
+    top: 2rem;
+    font-size: 18px;
+  }
+
+  p#play-again {
+    height: 1.5rem;
+    width: 8rem;
+    top: 4rem;
+    font-size: 12px;
+    left: 3rem;
+    font-weight: 500;
+  }
+
+  input#pName,
+  input#sName {
+    margin-top: 1.6rem;
+  }
+}
+
+/* Media Queries for Devices 300px to 400px */
+@media (max-width: 400px) {
+  #home-page {
+    height: 16rem;
+    width: 15rem;
+    padding: 2rem;
+    margin-top: 9rem;
+  }
+
+  h1#home-h1 {
+    font-size: 8vw;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .container {
+    height: 20vh;
+  }
+
+  #text {
+    color: #f5ec12;
+    font-size: 18px;
+    height: 3rem;
+    width: 15rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .game {
+    margin-top: 32px;
+    height: 0px;
+    margin-bottom: 2.5rem;
+    margin-left: 1rem;
+    gap: 3vmin;
+  }
+
+  .box {
+    height: 10vh;
+  }
+
+  #reset-btn {
+    font-size: 1rem;
+    margin-top: 18rem;
+  }
+
+  #reset-btn2 {
+    font-size: 1rem;
+    margin-top: 18rem;
+  }
+
+  #back-home {
+    font-size: 1rem;
+    margin-top: 18rem;
+  }
+
+  .msg-container {
+    position: relative;
+  }
+
+  #new-btn {
+    padding: 5vmin;
+    font-size: 1.27rem;
+    position: absolute;
+    top: 21rem;
+  }
+
+  #new-btn2 {
+    padding: 5vmin;
+    font-size: 1.27rem;
+    position: absolute;
+    top: 21rem;
+  }
+
+  img {
+    height: 42vmin;
+    width: 65vmin;
+    position: absolute;
+    bottom: 5rem;
+  }
+
+  #msg {
+    font-weight: 700;
+    padding: 10px;
+    position: absolute;
+    top: 2rem;
+  }
+
+  .draw {
+    height: 8rem;
+    width: 12rem;
+    margin-top: 16rem;
+  }
+
+  h1#dra {
+    left: 2.2rem;
+    top: 2.1rem;
+    font-size: 21px;
+  }
+
+  p#play-again {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    font-size: 18px;
+  }
+}
+
+/* Media Queries for Devices 401px to 500px */
+@media (min-width: 401px) and (max-width: 500px) {
+  #home-page {
+    height: 16rem;
+    width: 20rem;
+    padding: 2rem;
+    margin-top: 5rem;
+  }
+
+  .container {
+    height: 30vh;
+  }
+
+  #text {
+    color: #f5ec12;
+    font-size: 18px;
+    height: 4rem;
+    width: 18rem;
+    margin-top: 1rem;
+  }
+
+  .game {
+    margin-top: 5vmin;
+    height: 45vmin;
+    margin-bottom: 2.5rem;
+    gap: 2vmin;
+    margin-left: 2rem;
+  }
+
+  .box {
+    height: 14vh;
+  }
+
+  #reset-btn {
+    font-size: 1.25rem;
+    margin-top: 10rem;
+  }
+
+  #reset-btn2 {
+    font-size: 1.25rem;
+    margin-top: 10rem;
+  }
+
+  #back-home {
+    font-size: 1.25rem;
+    margin-top: 10rem;
+  }
+
+  .msg-container {
+    position: relative;
+  }
+
+  #new-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 20rem;
+  }
+
+  #new-btn2 {
+    padding: 1rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 20rem;
+  }
+
+  img {
+    height: 35vmin;
+    width: 55vmin;
+    position: absolute;
+    bottom: 7rem;
+  }
+
+  #msg {
+    font-weight: 700;
+    padding: 10px;
+    position: absolute;
+    top: 2rem;
+  }
+
+  .draw {
+    height: 10rem;
+    width: 16rem;
+    margin-top: 3rem;
+  }
+
+  h1#dra {
+    left: 3rem;
+    top: 2.5rem;
+    font-size: 21px;
+  }
+
+  p#play-again {
+    height: 2.5rem;
+    width: 7rem;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 3rem;
+  }
+}
+
+/* Media Queries for Devices 501px to 600px */
+@media (min-width: 501px) and (max-width: 600px) {
+  #home-page {
+    height: 16rem;
+    width: 25rem;
+    padding: 3rem;
+    margin-top: 6rem;
+  }
+
+  .container {
+    height: 45vh;
+  }
+
+  #text {
+    color: #f5ec12;
+    font-size: 18px;
+    height: 4rem;
+    width: 20rem;
+    margin-top: 1rem;
+  }
+
+  .game {
+    margin-top: 1vmin;
+    height: 50vmin;
+    margin-bottom: 2.5rem;
+    gap: 2vmin;
+    margin-left: 15px;
+  }
+
+  .box {
+    height: 15vh;
+  }
+
+  #reset-btn {
+    font-size: 1.25rem;
+    margin-top: 10rem;
+  }
+
+  #reset-btn2 {
+    font-size: 1.25rem;
+    margin-top: 10rem;
+  }
+
+  #back-home {
+    font-size: 1.25rem;
+    margin-top: 10rem;
+  }
+
+  .msg-container {
+    position: relative;
+  }
+
+  #new-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 22rem;
+  }
+
+  #new-btn2 {
+    padding: 1rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 22rem;
+  }
+
+  img {
+    height: 40vmin;
+    width: 60vmin;
+    position: absolute;
+    bottom: 8rem;
+  }
+
+  #msg {
+    font-weight: 700;
+    padding: 10px;
+    position: absolute;
+    top: 2rem;
+  }
+
+  .draw {
+    height: 11rem;
+    width: 18rem;
+    margin-top: 3rem;
+  }
+
+  h1#dra {
+    left: 5rem;
+    top: 2.5rem;
+    font-size: 21px;
+  }
+
+  p#play-again {
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 4rem;
+    font-size: 22px;
+  }
+}
+
+/* Media Queries for Devices 601px to 700px */
+@media (min-width: 601px) and (max-width: 700px) {
+  #home-page {
+    height: 17rem;
+    width: 28rem;
+    padding: 3.5rem;
+    margin-top: 6.5rem;
+  }
+
+  .container {
+    height: 50vh;
+  }
+
+  #text {
+    color: #f5ec12;
+    font-size: 19px;
+    height: 4rem;
+    width: 22rem;
+  }
+
+  .game {
+    margin-top: 1vmin;
+    height: 55vmin;
+    margin-bottom: 2.5rem;
+    gap: 2vmin;
+    margin-left: 15px;
+  }
+
+  .box {
+    height: 15vh;
+  }
+
+  #reset-btn {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  #reset-btn2 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  #back-home {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  .msg-container {
+    position: relative;
+  }
+
+  #new-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 25rem;
+  }
+
+  #new-btn2 {
+    padding: 1rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 25rem;
+  }
+
+  img {
+    height: 42vmin;
+    width: 65vmin;
+    position: absolute;
+    bottom: 8rem;
+  }
+
+  #msg {
+    font-weight: 700;
+    padding: 10px;
+    position: absolute;
+    top: 2rem;
+  }
+
+  .draw {
+    height: 12rem;
+    width: 20rem;
+    margin-top: 3rem;
+  }
+
+  h1#dra {
+    left: 5rem;
+    top: 2.5rem;
+    font-size: 24px;
+  }
+
+  p#play-again {
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 4rem;
+    font-size: 21px;
+  }
+}
+
+/* Media Queries for Devices 701px to 800px */
+
+@media (min-width: 701px) and (max-width: 800px) {
+  #home-page {
+    height: 21rem;
+    width: 32rem;
+    padding: 4rem;
+    margin-top: 7rem;
+  }
+
+  h1#home-h1 {
+    font-size: 43px;
+  }
+
+  #multiplay {
+    font-size: 28px;
+  }
+
+  #computer {
+    font-size: 28px;
+  }
+
+  input#pName {
+    width: 10rem;
+    height: 2rem;
+  }
+
+  input#sName {
+    width: 10rem;
+    height: 2rem;
+  }
+
+  .container {
+    height: 55vh;
+  }
+
+  #text {
+    color: #f5ec12;
+    font-size: 20px;
+    height: 4rem;
+    width: 22rem;
+  }
+
+  .game {
+    margin-top: 5vmin;
+    height: 60vmin;
+    margin-bottom: 2.5rem;
+    gap: 1.5vmin;
+    margin-left: 15px;
+  }
+
+  .box {
+    height: 16vh;
+  }
+
+  #reset-btn {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  #reset-btn2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  #back-home {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .msg-container {
+    position: relative;
+  }
+
+  #new-btn {
+    padding: 1rem;
+    font-size: 2rem;
+    position: absolute;
+    top: 40rem;
+  }
+
+  #new-btn2 {
+    padding: 1rem;
+    font-size: 2rem;
+    position: absolute;
+    top: 40rem;
+  }
+
+  img {
+    height: 42vmin;
+    width: 65vmin;
+    position: absolute;
+    bottom: 13rem;
+  }
+
+  #msg {
+    font-weight: 700;
+    padding: 10px;
+    position: absolute;
+    top: 2rem;
+  }
+
+  .draw {
+    height: 12rem;
+    width: 24rem;
+    margin-top: 3rem;
+  }
+
+  h1#dra {
+    left: 6rem;
+    top: 2.5rem;
+    font-size: 27px;
+  }
+
+  p#play-again {
+    height: 2.5rem;
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+/* Media Queries for Devices with a Minimum Width of 801px */
+@media (min-width: 801px) {
+  #home-page {
+    height: 18rem;
+    width: 32rem;
+    padding: 4.5rem;
+    margin-top: 7.5rem;
+  }
+
+  .container {
+    height: 60vh;
+  }
+
+  #text {
+    color: #f5ec12;
+    font-size: 22px;
+    height: 4.5rem;
+    width: 24rem;
+    margin-top: 1rem;
+  }
+
+  .game {
+    margin-top: 5vmin;
+    height: 50vmin;
+    margin-bottom: 2.5rem;
+    gap: 1.5vmin;
+    margin-left: 15px;
+  }
+
+  .box {
+    height: 17vh;
+  }
+
+  #reset-btn,
+  #reset-btn2,
+  #back-home,
+  #new-btn,
+  #new-btn2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .msg-container {
+    position: relative;
+  }
+
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 26rem;
+  }
+
+  #new-btn2 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 26rem;
+  }
+
+  img {
+    height: 45vmin;
+    width: 68vmin;
+    position: absolute;
+    bottom: 10rem;
+  }
+
+  #msg {
+    font-weight: 700;
+    padding: 10px;
+    position: absolute;
+    top: 2rem;
+  }
+
+  .draw {
+    height: 13rem;
+    width: 26rem;
+    margin-top: 3rem;
+  }
+
+  h1#dra {
+    left: 7.5rem;
+    top: 2.5rem;
+    font-size: 26px;
+  }
+
+  p#play-again {
+    height: 2.5rem;
+    font-size: 14px;
+    font-weight: 500;
+    font-size: 30px;
+  }
+}
